@@ -23,24 +23,6 @@ cp config.yml.example config.yml
 cp docker/compose.yml.example docker/docker-compose.yml 
 edit .yml:
         - (change password line 13 green-metrics-tool/
-│
-├─ config.yml                     # Your new configuration file (example / base)
-├─ .gitignore                     # Updated (.gitignore now includes config.yml)
-├─ INSTALL_DOCKER.md              # New documentation for Docker setup
-│
-├─ docker/
-│   ├─ docker-compose.yml         # Your completed Docker Compose file
-│   └─ nginx/
-│       ├─ api.conf               # Copied from api.conf.example
-│       ├─ block-and-redirect.conf# Copied from block-and-redirect.conf.example
-│       ├─ frontend.conf          # Copied from frontend.conf.example
-│       ├─ api.conf.example       # Original example file
-│       ├─ block-and-redirect.conf.example
-│       └─ frontend.conf.example
-│
-├─ Dockerfile-gunicorn            # Dockerfile for Gunicorn
-└─ ... other project files ...
-) 
 	- changetimezone bsp. UTC 
 	- change the path of volumes to ../:/var/www/green-metrics-tool:ro 
 	(../ )to set to partent folder  (2 x)
